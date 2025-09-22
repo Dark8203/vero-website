@@ -2,7 +2,7 @@ import React from 'react';
 
 export const VeroTrustLogo = ({ className }: { className?: string }) => (
     <img 
-        src='components\Vero-logo.png'
+        src='..\assets\Vero-logo.png'
         alt="Vero Trust Logo"
         className={className}
         width={32}

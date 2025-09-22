@@ -1,6 +1,6 @@
 import React from 'react';
 // Make sure this path is correct based on your folder structure
-import heroImage from './heroImage.jpg'; 
+import heroImage from '../assets/heroImage.png'; 
 
 const HeroBackground: React.FC = () => {
     return (
