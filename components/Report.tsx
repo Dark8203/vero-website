@@ -314,7 +314,7 @@ const Report: React.FC = () => {
                                         </div>
                                         <div>
                                             <h5 className="font-semibold text-gray-300 mb-1">Suggested Fix:</h5>
-                                            <p className="text-gray-400"><span className="text-cyan-400">Use Hybrid-Retrieval strategy like BM-25 along with semantic search</span> to pin-point exact terms required for trial findings .</p>
+                                            <p className="text-gray-400"><span className="text-cyan-400">Use Hybrid-Retrieval strategy like BM-25 along with semantic search</span> to pin-point exact terms required for trial findings.</p>
                                         </div>
                                         <div>
                                             <h5 className="font-semibold text-gray-300 mb-1">After Fix Expected Output:</h5>
