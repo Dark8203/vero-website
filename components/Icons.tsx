@@ -1,10 +1,13 @@
 import React from 'react';
 
 export const VeroTrustLogo = ({ className }: { className?: string }) => (
-    <svg className={className} width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="white"/>
-        <path d="M9.33301 16L13.333 20L22.6663 10.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
+    <img 
+        src='components\Vero-logo.png'
+        alt="Vero Trust Logo"
+        className={className}
+        width={32}
+        height={32}
+    />
 );
 
 export const MenuIcon = ({ className }: { className?: string }) => (
