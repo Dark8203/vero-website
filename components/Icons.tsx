@@ -1,9 +1,10 @@
 import React from 'react';
+import veroLogo from '../assets/Vero-logo.png';
 
 export const VeroTrustLogo = ({ className }: { className?: string }) => (
     <img 
-        src='..\assets\Vero-logo.png'
-        alt="Vero Trust Logo"
+        src= {veroLogo}
+        alt="Vero Logo"
         className={className}
         width={32}
         height={32}
