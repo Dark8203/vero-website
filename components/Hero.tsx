@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-4xl leading-tight tracking-tight">
-                        Make your AI <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] px-0.5"> <em className="inline-block pr-2"> Enterprise</em> Grade</span>
+                        Make your AI <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] [-webkit-text-fill-color:transparent] px-0.5"> <em className="inline-block pr-2"> Enterprise</em> Grade</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-[#A3A3A3] mt-6 max-w-3xl">
