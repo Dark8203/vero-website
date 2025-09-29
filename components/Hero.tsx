@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
                     </h1>
 
                     <p className="text-lg md:text-xl text-[#A3A3A3] mt-6 max-w-3xl">
-                        Cut QA cycles from weeks to minutes
+                        Test your AI, like production will
                     </p>
                     {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-4 mt-6 px-6 py-4 bg-slate-800/50 rounded-lg border border-slate-600/30"> */}
   <div className="flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-4 mt-6 px-6 py-4 bg-black/20 backdrop-blur-sm rounded-lg border border-gray-800/40">
