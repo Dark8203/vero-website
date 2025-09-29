@@ -84,17 +84,27 @@ const Hero: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-4xl leading-tight tracking-tight">
-                        Make your AI <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] px-0.5"> <em className="inline-block pr-2"> Enterprise</em> Grade</span>
+                        Make your AI <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] px-0.5"> <span className="inline-block pr-2 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent"> Enterprise</span> Grade</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-[#A3A3A3] mt-6 max-w-3xl">
-                        Your compliance shield from AI Failures
+                        Cut QA cycles from weeks to minutes
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 mt-6">
-                        <TrustIndicator>Detect</TrustIndicator>
-                        <TrustIndicator>Explain</TrustIndicator>
-                        <TrustIndicator>Prevent</TrustIndicator>
-                    </div>
+                    {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-4 mt-6 px-6 py-4 bg-slate-800/50 rounded-lg border border-slate-600/30"> */}
+  <div className="flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-4 mt-6 px-6 py-4 bg-black/20 backdrop-blur-sm rounded-lg border border-gray-800/40">
+  <div className="text-center">
+    <div className="text-gray-200 font-semibold text-m mb-1">DETECT</div>
+    <div className="text-gray-400 text-s">Performance Issues</div>
+  </div>
+  <div className="text-center">
+    <div className="text-gray-200 font-semibold text-m mb-1">EXPLAIN</div>
+    <div className="text-gray-400 text-s">Root Cause Analysis</div>
+  </div>
+  <div className="text-center">
+    <div className="text-gray-200 font-semibold text-m mb-1">PREVENT</div>
+    <div className="text-gray-400 text-s">Quality Assurance</div>
+  </div>
+</div>
 
                     <div className="mt-10 flex w-full max-w-xs flex-col gap-4 sm:w-auto sm:max-w-none">
                     <a 
