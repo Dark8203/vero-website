@@ -114,15 +114,15 @@ const HowItWorks: React.FC = () => {
         <section id="how-it-works" className="py-20 md:py-32">
             <div className="container mx-auto px-6 text-center">
                 <div className="flex flex-col items-center">
-                    <SectionTag>CONNECT • CONFIGURE • VALIDATE • ANALYZE</SectionTag>
+                    <SectionTag>DETECT • EXPLAIN • PREVENT</SectionTag>
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">A Simple Path to AI Trust</h2>
                     <p className="max-w-3xl text-lg text-[#A3A3A3] mb-16">
-                        Our straightforward, four-step process to evaluate, monitor, and gain unparalleled confidence in your RAG pipelines.
+                        Our straightforward, four-step process to evaluate, monitor, and gain unparalleled confidence in your AI pipelines.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <StepCard title="Connect Your Pipeline">
-                        <p className="text-[#A3A3A3] mb-6 flex-grow">Securely link your RAG model to the VERO platform using our developer-friendly API.</p>
+                        <p className="text-[#A3A3A3] mb-6 flex-grow">Securely link your AI pipeline to the VERO platform using our developer-friendly API.</p>
                         <div className="w-full aspect-square bg-black/30 rounded-2xl flex items-center justify-center border border-white/10">
                             <div className="w-24 h-24 rounded-full bg-[#1C1C1C]/50 flex items-center justify-center border border-white/10 animate-pulse">
                                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
@@ -159,7 +159,7 @@ const HowItWorks: React.FC = () => {
                     </StepCard>
                     
                     <StepCard title="Analyze Reports">
-                        <p className="text-[#A3A3A3] mb-6">Receive detailed, stakeholder-ready reports with clear insights and recommendations.</p>
+                        <p className="text-[#A3A3A3] mb-6">We audit each block of your pipeline to ensure compliance and provide stakeholder-ready reports</p>
                         <div className="flex-grow">
                            <ReportVisualization />
                         </div>

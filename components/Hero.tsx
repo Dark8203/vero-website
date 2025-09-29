@@ -32,11 +32,17 @@ const CalendlyWidget = () => {
 };
 
 
+// const TrustIndicator = ({ children }: { children: React.ReactNode }) => (
+//     <div className="flex items-center gap-2 text-sm text-[#888888]">
+//         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+//             <circle cx="4" cy="4" r="4" fill="#E0E0E0"/>
+//         </svg>
+//         <span>{children}</span>
+//     </div>
+// );
+
 const TrustIndicator = ({ children }: { children: React.ReactNode }) => (
-    <div className="flex items-center gap-2 text-sm text-[#888888]">
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="4" cy="4" r="4" fill="#E0E0E0"/>
-        </svg>
+    <div className="border border-white/20 rounded-md px-4 py-1 text-sm font-semibold text-white/80 bg-white/5 hover:bg-white/10 transition-all duration-300">
         <span>{children}</span>
     </div>
 );
@@ -78,12 +84,17 @@ const Hero: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-4xl leading-tight tracking-tight">
-                        Make your AI <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] px-0.5"> <em className="inline-block pr-2"> Enterprise</em> Grade</span>
+                        Make your AI <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] px-0.5"> <em className="inline-block pr-2"> Enterprise</em> Grade</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-[#A3A3A3] mt-6 max-w-3xl">
-                        Transform uncertainty into confidence with our comprehensive evaluation suite. Get data-driven reports that prove your AI quality beyond doubt.
+                        Your compliance shield from AI Failures
                     </p>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 mt-6">
+                        <TrustIndicator>Detect</TrustIndicator>
+                        <TrustIndicator>Explain</TrustIndicator>
+                        <TrustIndicator>Prevent</TrustIndicator>
+                    </div>
 
                     <div className="mt-10 flex w-full max-w-xs flex-col gap-4 sm:w-auto sm:max-w-none">
                     <a 
@@ -110,11 +121,10 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
 
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 mt-6">
+                    {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 mt-6">
                         <TrustIndicator>Early access priority</TrustIndicator>
-                        <TrustIndicator>Product demo included</TrustIndicator>
-                        <TrustIndicator>No spam, unsubscribe anytime</TrustIndicator>
-                    </div>
+                        <TrustIndicator>Customized metrics for your domain</TrustIndicator>
+                    </div> */}
                 </div>
             </section>
         </>

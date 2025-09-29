@@ -37,9 +37,9 @@ const WhatWeProvide: React.FC = () => {
             <div className="container mx-auto px-6 text-center">
                 <div className="flex flex-col items-center">
                     <SectionTag>GET STARTED</SectionTag>
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Ready to build trust in your AI?</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Stop guessing... <br/> Start proving your AI works</h2>
                     <p className="max-w-3xl text-lg text-[#A3A3A3] mb-10">
-                        Join the waitlist to get early access and be the first to receive a product demo and set up your first evaluation.
+                        Join early access to catch failures fast and run your first evaluation in minutes.
                     </p>
 
                     <form onSubmit={handleSubmit} className="mt-10 w-full max-w-lg">
