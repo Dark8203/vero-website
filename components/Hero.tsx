@@ -102,7 +102,7 @@ const Hero: React.FC = () => {
   </div>
   <div className="text-center">
     <div className="text-gray-200 font-semibold text-m mb-1">PREVENT</div>
-    <div className="text-gray-400 text-s">Quality Assurance</div>
+    <div className="text-gray-400 text-s">Production Failures</div>
   </div>
 </div>
 
