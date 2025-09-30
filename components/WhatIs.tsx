@@ -35,7 +35,7 @@ const WhatIs: React.FC = () => {
                         Detailed reports specialized for developers, product managers, and stakeholders. Everyone gets the data they need.
                     </FeatureCard>
                     <FeatureCard icon={<VersionControlIcon />} title="Version Control">
-                        Track changes and compare performance over time with robust version control for your RAG pipeline configurations.
+                        Track changes and compare performance over time with robust version control for your AI pipeline configurations.
                     </FeatureCard>
                 </div>
             </div>
