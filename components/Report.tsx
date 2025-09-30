@@ -250,9 +250,9 @@ const Report: React.FC = () => {
             <div className="container mx-auto px-6">
                 <div className="flex flex-col items-center text-center">
                     <SectionTag>ACTIONABLE REPORTS</SectionTag>
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">From Insight to Impact</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">From Insights to Impact</h2>
                     <p className="max-w-3xl text-lg text-[#A3A3A3] mb-16">
-                        VERO reports don't just identify issues; they provide clear, actionable diagnostics to help you fine-tune your pipeline for peak performance.
+                        VERO reports don't just identify issues; they provide clear, actionable fixes to help you fine-tune your pipeline for performance.
                     </p>
                 </div>
 

@@ -53,7 +53,7 @@ const EasyToSetup: React.FC = () => {
                     <SectionTag>EASY TO SETUP</SectionTag>
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Get started in minutes</h2>
                     <p className="max-w-3xl text-lg text-[#A3A3A3] mb-16">
-                        Integrate VERO into your workflow with just a few lines of code. Our intuitive Python library makes it simple to start evaluating your RAG pipelines.
+                        Integrate VERO into your workflow with just a few lines of code. Our intuitive Python library makes it simple to start evaluating your AI pipelines.
                     </p>
                 </div>
                 <CodeBlock />

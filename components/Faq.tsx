@@ -11,7 +11,7 @@ const FaqItem = ({ question, answer }: { question: string; answer: string }) => 
 const faqs = [
     {
         question: 'What does VERO offer?',
-        answer: 'VERO provides a comprehensive platform for the evaluation and continuous monitoring of RAG pipelines, ensuring optimal performance and reliability.'
+        answer: 'VERO provides a comprehensive platform for the evaluation and continuous monitoring of AI pipelines, ensuring robustness and reliability.'
     },
     {
         question: 'How do I use VERO?',
@@ -31,7 +31,7 @@ const faqs = [
     },
     {
         question: 'What happens after joining?',
-        answer: "You'll be first in line for early access, a product demo, and an invitation to set up your first evaluation."
+        answer: "You'll be in queue for early access of the full platform, and an invitation to set up your first evaluation."
     }
 ];
 

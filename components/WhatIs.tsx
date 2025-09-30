@@ -23,7 +23,7 @@ const WhatIs: React.FC = () => {
                     <SectionTag>WHY CHOOSE VERO?</SectionTag>
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Comprehensive evaluation and monitoring</h2>
                     <p className="max-w-3xl text-lg text-[#A3A3A3] mb-16">
-                        Comprehensive evaluation and monitoring for RAG pipelines with enterprise-grade reliability.
+                        Comprehensive evaluation and monitoring for AI pipelines with enterprise-grade reliability.
                     </p>
                 </div>
 

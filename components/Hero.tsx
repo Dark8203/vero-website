@@ -32,11 +32,17 @@ const CalendlyWidget = () => {
 };
 
 
+// const TrustIndicator = ({ children }: { children: React.ReactNode }) => (
+//     <div className="flex items-center gap-2 text-sm text-[#888888]">
+//         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+//             <circle cx="4" cy="4" r="4" fill="#E0E0E0"/>
+//         </svg>
+//         <span>{children}</span>
+//     </div>
+// );
+
 const TrustIndicator = ({ children }: { children: React.ReactNode }) => (
-    <div className="flex items-center gap-2 text-sm text-[#888888]">
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="4" cy="4" r="4" fill="#E0E0E0"/>
-        </svg>
+    <div className="border border-white/20 rounded-md px-4 py-1 text-sm font-semibold text-white/80 bg-white/5 hover:bg-white/10 transition-all duration-300">
         <span>{children}</span>
     </div>
 );
@@ -78,12 +84,31 @@ const Hero: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-4xl leading-tight tracking-tight">
+<<<<<<< HEAD
                         Make your AI <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] [-webkit-text-fill-color:transparent] px-0.5"> <em className="inline-block pr-2 inline-block pr-2 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent"> Enterprise</em> Grade</span>
+=======
+                        Make your AI <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] px-0.5"> <span className="inline-block pr-2 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent"> Enterprise</span> Grade</span>
+>>>>>>> a01f5812591ab7269ccf3349618d7b74701bac80
                     </h1>
 
                     <p className="text-lg md:text-xl text-[#A3A3A3] mt-6 max-w-3xl">
-                        Transform uncertainty into confidence with our comprehensive evaluation suite. Get data-driven reports that prove your AI quality beyond doubt.
+                        Test your AI, like production will
                     </p>
+                    {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-4 mt-6 px-6 py-4 bg-slate-800/50 rounded-lg border border-slate-600/30"> */}
+  <div className="flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-4 mt-6 px-6 py-4 bg-black/20 backdrop-blur-sm rounded-lg border border-gray-800/40">
+  <div className="text-center">
+    <div className="text-gray-200 font-semibold text-m mb-1">DETECT</div>
+    <div className="text-gray-400 text-s">Performance Issues</div>
+  </div>
+  <div className="text-center">
+    <div className="text-gray-200 font-semibold text-m mb-1">EXPLAIN</div>
+    <div className="text-gray-400 text-s">Root Cause Analysis</div>
+  </div>
+  <div className="text-center">
+    <div className="text-gray-200 font-semibold text-m mb-1">PREVENT</div>
+    <div className="text-gray-400 text-s">Production Failures</div>
+  </div>
+</div>
 
                     <div className="mt-10 flex w-full max-w-xs flex-col gap-4 sm:w-auto sm:max-w-none">
                     <a 
@@ -110,11 +135,10 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
 
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 mt-6">
+                    {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 mt-6">
                         <TrustIndicator>Early access priority</TrustIndicator>
-                        <TrustIndicator>Product demo included</TrustIndicator>
-                        <TrustIndicator>No spam, unsubscribe anytime</TrustIndicator>
-                    </div>
+                        <TrustIndicator>Customized metrics for your domain</TrustIndicator>
+                    </div> */}
                 </div>
             </section>
         </>
