@@ -84,11 +84,11 @@ const Hero: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-4xl leading-tight tracking-tight">
-                        Make your AI <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] [-webkit-text-fill-color:transparent] px-0.5"> <em className="inline-block pr-2 inline-block pr-2 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent"> Enterprise</em> Grade</span>
+                        Make your AI <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400 [-webkit-background-clip:text] [background-clip:text] [-webkit-text-fill-color:transparent] px-0.5"> <span className="inline-block pr-2 inline-block pr-2 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent"> Enterprise</span> Grade</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-[#A3A3A3] mt-6 max-w-3xl">
-                        Test your AI, like production will
+                        Test your AI the way production will, in minutes
                     </p>
                     {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-4 mt-6 px-6 py-4 bg-slate-800/50 rounded-lg border border-slate-600/30"> */}
 
