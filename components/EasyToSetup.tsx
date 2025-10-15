@@ -59,7 +59,7 @@ const EasyToSetup: React.FC = () => {
                 <CodeBlock />
                 <div className="mt-16">
                     <a
-                        href="/docs/"
+                        href="../docs/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 group"
