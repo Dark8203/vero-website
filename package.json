@@ -18,8 +18,10 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "gh-pages": "^3.2.3",
+    "sitemap": "^9.0.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0",
-    "gh-pages": "^3.2.3"
+    "vite-plugin-compression": "^0.5.1"
   }
 }

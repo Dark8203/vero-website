@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#0a0a0a" />
+
     <meta charset="UTF-M" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VERO</title>
+    <link rel="icon" type="image/svg+xml" href="/Vero-logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
     <style>
       body {
         font-family: "Plus Jakarta Sans", sans-serif;
@@ -38,9 +37,68 @@
         }
       }
     </script>
+
+    <!-- Primary SEO -->
+    <title>Vero</title>
+    <meta name="description" content="Vero is a comprehensive platform for the evaluation and continuous monitoring of AI pipelines, ensuring optimal performance and enterprise-grade reliability. With Vero, you can cut QA cycles from weeks to minutes." />
+    <link rel="canonical" href="https://vero.co.in/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vero" />
+    <meta property="og:description" content="Vero is a comprehensive platform for the evaluation and continuous monitoring of AI pipelines, ensuring optimal performance and enterprise-grade reliability. With Vero, you can cut QA cycles from weeks to minutes." />
+    <meta property="og:url" content="https://vero.co.in/" />
+    <meta property="og:image" content="https://vero.co.in/Vero-logo.png" />
+    <meta property="og:site_name" content="Vero" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vero" />
+    <meta name="twitter:description" content="Vero is a comprehensive platform for the evaluation and continuous monitoring of AI pipelines, ensuring optimal performance and enterprise-grade reliability. With Vero, you can cut QA cycles from weeks to minutes." />
+    <meta name="twitter:image" content="https://vero.co.in/Vero-logo.png" />
+
+    <!-- Performance: preconnect & preload (fonts & hero image) -->
+    <!-- Preconnect to font host if using Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Example: preload the hero image and main css/critical font -->
+    <link rel="preload" as="image" href="/heroImage.png" />
+    <!-- If you self-host fonts, preload the critical font file -->
+    <!-- <link rel="preload" href="/assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin> -->
+
+    <!-- Fallback CSP (optional) and referrer policy -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Favicons (copy to /public) -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Structured data: Organization (replace placeholders) -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"Vero",
+      "url":"https://vero.co.in/",
+      "logo":"https://vero.co.in/Vero-logo.png",
+      "sameAs":["https://github.com/Dark8203/vero-website",]
+    }
+    </script>
+
+    
+
+
+    <meta name="robots" content="index, follow" />
+
+
+    <!-- Add any other JSON-LD (LocalBusiness, WebSite) on specific pages -->
   </head>
+
+
   <body class="bg-[#0D0D0D]">
     <div id="root"></div>
+    <script type="module" src="/@vite/client"></script>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
