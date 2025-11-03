@@ -24,6 +24,7 @@
     "sitemap": "^9.0.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0",
-    "vite-plugin-compression": "^0.5.1"
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-prerender": "^1.0.8"
   }
 }
