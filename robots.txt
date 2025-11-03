@@ -2,5 +2,5 @@ User-agent: *
 Disallow: /node_modules/
 Allow: /
 
-Sitemap: https://vero.co.in//sitemap.xml
-Host: https://vero.co.in/
+Sitemap: https://vero.co.in/sitemap.xml
+Host: vero.co.in
