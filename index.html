@@ -1,103 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#0a0a0a" />
-
-    <meta charset="UTF-M" />
-    <link rel="icon" type="image/svg+xml" href="/assets/Vero-logo-s6stXzCE.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vero | Intent-Aware Search for Shopify</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <style>
+      :root {
+        --background: 1.0000 0 0;
+        --foreground: 0.2138 0.0019 286.2347;
+        --card: 1.0000 0 0;
+        --card-foreground: 0.2138 0.0019 286.2347;
+        --popover: 1.0000 0 0;
+        --popover-foreground: 0.2138 0.0019 286.2347;
+        --primary: 0.8348 0.0392 259.2845;
+        --primary-foreground: 0.1921 0.0551 307.6705;
+        --secondary: 0.8761 0 0;
+        --secondary-foreground: 0.2138 0.0019 286.2347;
+        --muted: 0.9702 0 0;
+        --muted-foreground: 0.5555 0 0;
+        --accent: 0.9598 0.0041 301.4240;
+        --accent-foreground: 0 0 0;
+        --destructive: 0.4281 0.1569 21.2580;
+        --destructive-foreground: 1.0000 0 0;
+        --border: 0.9219 0 0;
+        --input: 0.9219 0 0;
+        --ring: 0.7090 0 0;
+        --chart-1: 0.8180 0.0604 250.8699;
+        --chart-2: 0.6328 0.1163 259.7679;
+        --chart-3: 0.5685 0.1369 264.1818;
+        --chart-4: 0.5088 0.1381 265.9791;
+        --chart-5: 0.4434 0.1122 269.4931;
+        --radius: 0.525rem;
+        --sidebar: 0.9851 0 0;
+        --sidebar-foreground: 0.2138 0.0019 286.2347;
+        --sidebar-primary: 0.2138 0.0019 286.2347;
+        --sidebar-primary-foreground: 0.9851 0 0;
+        --sidebar-accent: 0.9702 0 0;
+        --sidebar-accent-foreground: 0.2138 0.0019 286.2347;
+        --sidebar-border: 0.9219 0 0;
+        --sidebar-ring: 0.7090 0 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .dark {
+        --background: 0.2138 0.0019 286.2347;
+        --foreground: 0.9851 0 0;
+        --card: 0.2138 0.0019 286.2347;
+        --card-foreground: 0.9851 0 0;
+        --popover: 0.2686 0 0;
+        --popover-foreground: 0.9851 0 0;
+        --primary: 0.9219 0 0;
+        --primary-foreground: 0.2138 0.0019 286.2347;
+        --secondary: 0.2686 0 0;
+        --secondary-foreground: 0.9851 0 0;
+        --muted: 0.2686 0 0;
+        --muted-foreground: 0.7090 0 0;
+        --accent: 0.3715 0 0;
+        --accent-foreground: 0.9851 0 0;
+        --destructive: 0.7114 0.1159 19.0301;
+        --destructive-foreground: 0.9851 0 0;
+        --border: 0.2768 0 0;
+        --input: 0.3250 0 0;
+        --ring: 0.5555 0 0;
+        --chart-1: 0.8180 0.0604 250.8699;
+        --chart-2: 0.6328 0.1163 259.7679;
+        --chart-3: 0.5685 0.1369 264.1818;
+        --chart-4: 0.5088 0.1381 265.9791;
+        --chart-5: 0.4434 0.1122 269.4931;
+        --sidebar: 0.2138 0.0019 286.2347;
+        --sidebar-foreground: 0.9851 0 0;
+        --sidebar-primary: 0.5071 0.1537 267.1647;
+        --sidebar-primary-foreground: 0.9851 0 0;
+        --sidebar-accent: 0.2686 0 0;
+        --sidebar-accent-foreground: 0.9851 0 0;
+        --sidebar-border: 0.2768 0 0;
+        --sidebar-ring: 0.4386 0 0;
+      }
+
       body {
-        font-family: "Plus Jakarta Sans", sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        background-color: oklch(var(--background));
+        color: oklch(var(--foreground));
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
-      .animate-spin-slow {
-        animation: spin 20s linear infinite;
+
+      /* Glass effects helpers */
+      .glass-card {
+        background: oklch(var(--card) / 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid oklch(var(--border) / 0.5);
       }
-      @keyframes spin {
-        from {
-          transform: rotateY(0deg) rotateX(0deg);
-        }
-        to {
-          transform: rotateY(360deg) rotateX(360deg);
-        }
+      .glass-dark {
+        background: oklch(var(--foreground) / 0.9);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid oklch(var(--border) / 0.1);
+        color: oklch(var(--background));
       }
     </style>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-
-    <!-- Primary SEO -->
-    <title>Vero</title>
-    <meta name="description" content="Vero is a comprehensive platform for the evaluation and continuous monitoring of AI pipelines, ensuring optimal performance and enterprise-grade reliability. With Vero, you can cut QA cycles from weeks to minutes." />
-    <link rel="canonical" href="https://vero.co.in/" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Vero" />
-    <meta property="og:description" content="Vero is a comprehensive platform for the evaluation and continuous monitoring of AI pipelines, ensuring optimal performance and enterprise-grade reliability. With Vero, you can cut QA cycles from weeks to minutes." />
-    <meta property="og:url" content="https://vero.co.in/" />
-    <meta property="og:image" content="https://vero.co.in/Vero-logo.png" />
-    <meta property="og:site_name" content="Vero" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Vero" />
-    <meta name="twitter:description" content="Vero is a comprehensive platform for the evaluation and continuous monitoring of AI pipelines, ensuring optimal performance and enterprise-grade reliability. With Vero, you can cut QA cycles from weeks to minutes." />
-    <meta name="twitter:image" content="https://vero.co.in/Vero-logo.png" />
-
-    <!-- Performance: preconnect & preload (fonts & hero image) -->
-    <!-- Preconnect to font host if using Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Example: preload the hero image and main css/critical font -->
-    <link rel="preload" as="image" href="/assets/heroImage-BuZdBULp.png" />
-    <!-- If you self-host fonts, preload the critical font file -->
-    <!-- <link rel="preload" href="/assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin> -->
-
-    <!-- Fallback CSP (optional) and referrer policy -->
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-
-    <!-- Favicons (copy to /public) -->
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-    <!-- Structured data: Organization (replace placeholders) -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Organization",
-      "name":"Vero",
-      "url":"https://vero.co.in/",
-      "logo":"https://vero.co.in/Vero-logo.png",
-      "sameAs":["https://github.com/Dark8203/vero-website"]
-    }
-    </script>
-    
-
-
-    <meta name="robots" content="index, follow" />
-
-
-    <!-- Add any other JSON-LD (LocalBusiness, WebSite) on specific pages -->
-    <script type="importmap">
-      {
-        "imports": {
-          "react/": "https://aistudiocdn.com/react@^19.1.1/",
-          "react": "https://aistudiocdn.com/react@^19.1.1",
-          "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Open Sans', 'sans-serif'],
+            },
+            borderRadius: {
+              lg: 'var(--radius)',
+              md: 'calc(var(--radius) - 2px)',
+              sm: 'calc(var(--radius) - 4px)',
+            },
+            colors: {
+              border: 'oklch(var(--border) / <alpha-value>)',
+              input: 'oklch(var(--input) / <alpha-value>)',
+              ring: 'oklch(var(--ring) / <alpha-value>)',
+              background: 'oklch(var(--background) / <alpha-value>)',
+              foreground: 'oklch(var(--foreground) / <alpha-value>)',
+              primary: {
+                DEFAULT: 'oklch(var(--primary) / <alpha-value>)',
+                foreground: 'oklch(var(--primary-foreground) / <alpha-value>)',
+              },
+              secondary: {
+                DEFAULT: 'oklch(var(--secondary) / <alpha-value>)',
+                foreground: 'oklch(var(--secondary-foreground) / <alpha-value>)',
+              },
+              destructive: {
+                DEFAULT: 'oklch(var(--destructive) / <alpha-value>)',
+                foreground: 'oklch(var(--destructive-foreground) / <alpha-value>)',
+              },
+              muted: {
+                DEFAULT: 'oklch(var(--muted) / <alpha-value>)',
+                foreground: 'oklch(var(--muted-foreground) / <alpha-value>)',
+              },
+              accent: {
+                DEFAULT: 'oklch(var(--accent) / <alpha-value>)',
+                foreground: 'oklch(var(--accent-foreground) / <alpha-value>)',
+              },
+              popover: {
+                DEFAULT: 'oklch(var(--popover) / <alpha-value>)',
+                foreground: 'oklch(var(--popover-foreground) / <alpha-value>)',
+              },
+              card: {
+                DEFAULT: 'oklch(var(--card) / <alpha-value>)',
+                foreground: 'oklch(var(--card-foreground) / <alpha-value>)',
+              },
+              sidebar: {
+                DEFAULT: 'oklch(var(--sidebar) / <alpha-value>)',
+                foreground: 'oklch(var(--sidebar-foreground) / <alpha-value>)',
+                primary: 'oklch(var(--sidebar-primary) / <alpha-value>)',
+                'primary-foreground': 'oklch(var(--sidebar-primary-foreground) / <alpha-value>)',
+                accent: 'oklch(var(--sidebar-accent) / <alpha-value>)',
+                'accent-foreground': 'oklch(var(--sidebar-accent-foreground) / <alpha-value>)',
+                border: 'oklch(var(--sidebar-border) / <alpha-value>)',
+                ring: 'oklch(var(--sidebar-ring) / <alpha-value>)',
+              }
+            },
+            boxShadow: {
+              'soft': '0 20px 40px -15px rgba(0, 0, 0, 0.05)',
+              'glow': '0 0 20px oklch(var(--primary) / 0.3)',
+            }
+          }
         }
       }
     </script>
-    <script type="module" crossorigin src="/assets/index-pvA_OnOW.js"></script>
-  </head>
 
-
-  <body class="bg-[#0D0D0D]">
-    <div id="root"></div>
-  </body>
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-KfrmeyxJ.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
 </html>
