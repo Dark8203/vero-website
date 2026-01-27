@@ -1,6 +1,11 @@
+# Group 1: All User Agents
 User-agent: *
-Disallow: /node_modules/
 Allow: /
+# Disallow private or admin paths if you add them later
+Disallow: /private/
 
+# Sitemaps
 Sitemap: https://vero.co.in/sitemap.xml
-Host: vero.co.in
+
+# Host
+Host: https://vero.co.in
