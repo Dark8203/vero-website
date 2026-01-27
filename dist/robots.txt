@@ -1,0 +1,11 @@
+# Group 1: All User Agents
+User-agent: *
+Allow: /
+# Disallow private or admin paths if you add them later
+Disallow: /private/
+
+# Sitemaps
+Sitemap: https://vero.co.in/sitemap.xml
+
+# Host
+Host: https://vero.co.in
