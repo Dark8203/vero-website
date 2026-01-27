@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: '/vero-website/', // ← Move this INSIDE the return object
+      base: '/', // ← Move this INSIDE the return object
       server: {
         port: 3000,
         host: '0.0.0.0',
