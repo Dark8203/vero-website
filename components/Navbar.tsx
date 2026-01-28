@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/Button';
 import { Search, Menu, X } from 'lucide-react';
+import veroLogo from '../assets/Vero-logo.png';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +28,12 @@ export const Navbar: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center text-primary-foreground shadow-lg shadow-primary/20 transition-transform group-hover:scale-105 duration-300">
-            <Search size={20} strokeWidth={3} className="text-primary-foreground" />
+            <img 
+        src= {veroLogo}
+        alt="Vero Logo"
+        width={32}
+        height={32}
+    />
           </div>
           <span className="font-bold text-2xl tracking-tight text-foreground">Vero</span>
         </div>
